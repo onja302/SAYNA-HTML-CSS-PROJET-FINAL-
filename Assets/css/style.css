@@ -1,0 +1,137 @@
+/* Style the navigation bar */
+header {
+    width: 100%;
+    padding: 1%;
+    background-color: #d35649;
+    overflow: auto;
+  }
+  
+  /* header links */
+  header a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  header div {
+      float: left;
+  }
+  header nav {
+      float: right;
+  }
+  header ul > li {
+      display: inline; 
+  }
+  /* header links on mouse-over */
+  header  a:hover {
+    background-color: #98a5a5;
+  }
+  
+  /* Current/active navbar link 
+  .active {
+    background-color: #98a5a5;
+  }
+  */
+  .navbar-right {
+    display: inline;
+  }
+
+footer{
+    width: 100%;
+    padding: 2%;
+    background-color: #1f1f1f;
+    overflow: auto;
+  }
+  footer h1{
+      color: white;
+      font-size: 18;
+      text-align: center;
+  }
+  footer  p{
+    color: white;
+    font-size: 14;
+    text-align: center;
+  }
+  /* Style the form - display items horizontally */
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-left: 30%;
+  }
+  
+  /* Add some margins for each label */
+  .form-inline label {
+    margin: 5px 10px 5px 0;
+  }
+  
+  /* Style the input fields */
+  .form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #444;
+  }
+  
+  /* Style the submit button */
+  .form-inline button {
+    padding: 10px 20px;
+    background-color: #444;
+    border: 1px solid #ddd;
+    color: white;
+  }
+  
+  .form-inline button:hover {
+    background-color: #1f1f1f;
+  }
+
+ footer row {
+    display: inline-flex;
+}
+footer col {
+    margin: 0 8em;
+}
+footer a{
+    padding-left: 30%;
+    text-align: center;
+    color: #d35649;
+    text-decoration: none;
+    float: left;
+    font-size: 14;
+}
+footer a:hover{
+    color: #d35649;
+    text-decoration: underline;
+}
+.foot{
+  width: 100%;
+  margin: 0;
+  padding: 1%;
+  background-color: #ddd;;
+}
+footer ul > li {
+  display: inline; 
+}
+
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+  @media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+  */
