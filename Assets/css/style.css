@@ -87,7 +87,7 @@ footer{
   .form-inline button:hover {
     background-color: #1f1f1f;
   }
-
+/* Style the footer */
  footer row {
     display: inline-flex;
 }
@@ -107,19 +107,141 @@ footer a:hover{
     text-decoration: underline;
 }
 .foot{
-  width: 100%;
+  display: flex;
   margin: 0;
   padding: 1%;
-  background-color: #ddd;;
+  background-color: #ddd;
 }
 footer ul > li {
   display: inline; 
 }
-
+.foot p{
   
-  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels
+  color: #1f1f1f;
+  font-size: 10;
+}
+.foot a:hover{
+  color: #509bd7;
+}
+div .paragraph{
+  float: right;
+}
+
+/*main*/
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  color: #1f1f1f;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .content {
+  position: absolute; /* Position the background text */
+  top: 30%; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(185, 182, 182); /* Fallback color */
+  background: rgba(170, 165, 165, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+main h1{
+  color: #d35649;
+  font-size: 20;
+  text-align: center;
+}
+.column{
+  display: flex;
+}
+.column > .row {
+  display: flex;
+}
+.column h2{
+  font-size: 16px;
+  text-align: center;
+}
+/*texte avec image*/
+section .primary-color{
+  background-color: #d35649;
+}
+section .primary-gray{
+  background-color: #98a5a5;
+}
+section .primary-blue{
+  background-color: #509bd7;;
+}
+section .col{
+  display: flex
+}
+section h3{
+  color: #ddd;;
+  font-size: 14;
+}
+section button{
+    padding: 10px 20px;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    color: #444;
+    
+}
+section img{
+  float: right;
+}
+section .row{
+  display: flex;
+}
+
+/*page about*/
+.block-white {
+  margin: auto;
+  width: 80%;
+  padding: 20%;
+  margin: 2% 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.block-white  .column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+  
+}
+
+/* Remove extra left and right margins, due to padding */
+.block-white .row {margin: 20px -5px;}
+
+/* Clear floats after the columns */
+.block-white  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.block-white  .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels*/
   @media screen and (max-width: 500px) {
-    .navbar a {
+    header a {
       float: none;
       display: block;
     }
@@ -134,4 +256,11 @@ footer ul > li {
     align-items: stretch;
   }
 }
-  */
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
